@@ -23,19 +23,18 @@ header .img-fluid {
 header .navbar{
     background-color: #005583;
     color: #edf4da;
+    width: 30%;
 }
 
 header .nav-link{
-    
+    text-align: center;
+    display: inline-block;
     font-size: 20px;
     
     
 }
 
-header .nav-link .a{
-    margin-left: 5%;
-    margin-right: 5%;
-}
+
 
 header .nav-link:hover{
     color: #edf4da;
