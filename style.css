@@ -18,20 +18,23 @@ header .img-fluid {
     max-width: 90%;
     height: auto;
     margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 header .navbar{
+    position: sticky;
     background-color: #005583;
     color: #edf4da;
     width: 30%;
+    margin-bottom: 2%;
+    
 }
 
 header .nav-link{
     text-align: center;
     display: inline-block;
     font-size: 20px;
-    
-    
+    margin: auto
 }
 
 
@@ -50,6 +53,8 @@ header .nav-link:hover{
     padding-top: 5%;
     z-index: 2;
 }
+
+
 
 .bg {
     position: absolute;
@@ -171,6 +176,12 @@ footer .nav-link{
 
 footer .nav-link:hover{
     color: #ffdc51;
+}
+
+.idk {
+    background-color: #eabf75;
+    width: 100%;
+    margin-left: 2%;
 }
 
 .vidzone{
