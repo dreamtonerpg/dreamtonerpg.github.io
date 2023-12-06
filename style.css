@@ -24,7 +24,6 @@ header .img-fluid {
 header .navbar{
     position: sticky;
     background-color: #005583;
-    color: #edf4da;
     width: 30%;
     
 }
@@ -33,15 +32,24 @@ header .nav-link{
     text-align: center;
     display: inline-block;
     font-size: 20px;
-    margin: auto
+    margin: auto;
+    color: #edf4da !important;
 }
 
-
-
+header .nav-link{
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: auto;
+    color: #edf4da !important;
+}
 header .nav-link:hover{
-    color: #edf4da;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: auto;
+    color: #b9d1c7 !important;
 }
-
 
 .btn-custom {
     color: #fff;
@@ -142,8 +150,11 @@ header .nav-link:hover{
   }
 
 footer {
+    outline-style: solid;
+    outline-color: #eabf75;
+    outline-width: 0.5em;
     width: 100%;
-    background-color: #c24b49;
+    background-color: #005583;
     line-height: 120%;
     bottom: 0;
     position: relative;
@@ -165,30 +176,50 @@ footer > p{
     margin-bottom: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color:#512524;
+    color:#f7f7f7;
     text-align: center;
 }
 
 footer .nav-link{
-    color: #512524;
+    color: #f7f7f7;
 }
 
 footer .nav-link:hover{
-    color: #ffdc51;
+    color: #b9d1c7;
 }
 
 .idk {
     background-color: #eabf75;
-    width: 50%;
+    width: 70%;
     float: left;
+    
+    margin-top: 2%;
+}
+
+.idk h1 {
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+.idk p {
+    font-size: 90%;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: center;
+    text-justify: inter-word;
 }
 
 .vidzone{
     position: relative;
     overflow: hidden;
-    width: 50%;
+    width: 70%;
     float: right;
-    padding-top: 56.25%;
+    margin-top: 2%;
+    
 }
 
 .responsive-iframe {
@@ -213,6 +244,16 @@ div .info > p {
     margin: 5%;
     text-align: center;
     text-justify: inter-word;
+}
+
+
+.content {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s; 
+    size: 5%;
 }
 
 .chara {
@@ -277,3 +318,44 @@ div .info > p {
     color: #e2a241;
     transition: color 1s;
 }
+
+/* The grid: Four equal columns that floats next to each other */
+
+.idk2 {
+    background-color: #96c98c;
+    float: center;
+    
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.idk2 .row {
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.idk2 .column {
+    width: 25%;
+    padding-top: 2%;
+    padding-bottom: 2.5%;
+  }
+  
+  /* Style the images inside the grid */
+.idk2 .column img {
+    opacity: 1;
+
+    width: 100%;
+  }
+  
+.idk2 .column img:hover {
+    opacity: 0.8;
+  }
+  
+  /* Clear floats after the columns */
+.idk2 .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
