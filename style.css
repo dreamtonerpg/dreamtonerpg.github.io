@@ -26,7 +26,6 @@ header .navbar{
     background-color: #005583;
     color: #edf4da;
     width: 30%;
-    margin-bottom: 2%;
     
 }
 
@@ -180,14 +179,15 @@ footer .nav-link:hover{
 
 .idk {
     background-color: #eabf75;
-    width: 100%;
-    margin-left: 2%;
+    width: 50%;
+    float: left;
 }
 
 .vidzone{
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 50%;
+    float: right;
     padding-top: 56.25%;
 }
 
