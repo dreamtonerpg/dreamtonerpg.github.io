@@ -24,9 +24,12 @@ header .img-fluid {
 header .navbar{
     position: sticky;
     background-color: #005583;
-    width: 30%;
-    
+    width: 40%;
+    padding-left:1%;
+    padding-right:3.5%;
+
 }
+
 
 header .nav-link{
     text-align: center;
@@ -36,18 +39,10 @@ header .nav-link{
     color: #edf4da !important;
 }
 
-header .nav-link{
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-    margin: auto;
-    color: #edf4da !important;
-}
 header .nav-link:hover{
     text-align: center;
     display: inline-block;
     font-size: 20px;
-    margin: auto;
     color: #b9d1c7 !important;
 }
 
@@ -359,3 +354,27 @@ div .info > p {
     display: table;
     clear: both;
   }
+
+
+
+header .specialNav{
+    background-color: #edf4da;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    
+    color: #005583 !important;
+    border-radius: 1em;
+    border: 0.1em solid #edf4da;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+header .specialNav:hover{
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    
+    color: #b9d1c7 !important;
+    
+}
