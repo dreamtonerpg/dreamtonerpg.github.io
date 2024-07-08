@@ -1,67 +1,61 @@
 body {
-  background-color: red;
-  background-image: url("./Resources/Assets/vriska.png");
+    background-color: red;
+    background-image: url("./Resources/Assets/vriska.png");
 }
 h1 {
-  color: blue;
+    color: blue;
 }
 
 .HomeBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-image: url("./Resources/Assets/background.png");
-  image-rendering: pixelated;
-  background-repeat: no-repeat;
-  background-size: cover;
- 
-  /* margin: auto; */
-/* width: 50%; */
-  /* padding: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url("./Resources/Assets/background.png");
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 50px;
 
+    /* margin: auto; */
+    /* width: 50%; */
+    /* padding: 10px; */
 }
 
 .HomeBar iframe {
-	width: 576px;
-	height: 324px;
-	margin-top: 2%;
-	 margin-bottom: 2%;
-
+    width: 576px;
+    height: 324px;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
-
 
 @media (max-width: 1250px) {
-	
-.HomeBar {
-	flex-direction: column;
-	align-items: stretch;
-}
-	
-	
-  .HomeLogoColumn {
-  padding-bottom: 0;
- 
-	}
-  .HomeBar iframe {
-	width: initial;
-	height: initial;
+    .HomeBar {
+        flex-direction: column;
+        align-items: center;
+    }
 
-	}
+    .HomeLogoColumn {
+        padding-bottom: 0 !important;
+        max-width: 100%;
+    }
+
+    .HomeBar iframe {
+        width: auto;
+        max-width: 100%;
+        aspect-ratio: 16/9;
+    }
 }
 
 .HomeLogoColumn {
-	display: flex;
-  flex-direction: column;
-  justify-content: end;
-  
-  padding-bottom: 8rem;
-  padding-right: 5%
- 
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    padding-bottom: 8rem;
 }
 
 .HomeLogoColumn img {
-	width: 505px;
-	image-rendering: pixelated
-
-
+    width: 505px;
+    max-width: 100%;
+    image-rendering: pixelated;
 }
