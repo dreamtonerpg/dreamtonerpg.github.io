@@ -57,7 +57,7 @@ h1 {
 
 .infobox h2 {
     padding-top: 1.2rem;
-    color: #de6e4b;
+    color: #/ de6e4b;
     padding-left: 2rem;
     font-family: Posten;
 }
@@ -199,12 +199,16 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 60rem;
+    max-width: 60rem;
 }
 
 .screenshot {
-    flex: 1 0 30%;
+    image-rendering: pixelated;
+    width: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
     box-sizing: border-box;
     padding: 5px;
 }
