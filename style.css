@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Posten'; /*a name to be used later*/
-    src: url('./Resources/Fonts/PoetsenOne-Regular.otf'); /*URL to font*/
+    font-family: "Posten"; /*a name to be used later*/
+    src: url("./Resources/Fonts/PoetsenOne-Regular.otf"); /*URL to font*/
 }
 
 body {
@@ -12,62 +12,59 @@ h1 {
 }
 
 .infoboxcenterfkery {
-  display: flex;
-  justify-content: center;
-  margin-left:0rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 0rem;
 }
 
 .infobox {
-	position: relative;
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-	background-color:#eaad61;
-	display: flex;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #eaad61;
+    display: flex;
     flex-direction: row;
-   /* padding-right: -1rem; */
-	margin-left:auto;
-	margin-right:auto;
-	border-radius: 25px;
-	width: 75%;
+    /* padding-right: -1rem; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    width: 75%;
     gap: 50px;
-	outline-style: solid; 
-	outline-color: black; 
-	outline-width: 0.2rem; 
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
 }
 
 .infobox .about {
-	
-	background-color:white;
-	border-radius: 25px;
-	width: 50%;
-	padding-bottom: 1rem;
-	padding-right: auto;
-	margin-top: 1rem;
-	outline-style: solid; 
-	outline-color: black; 
-	outline-width: 0.2rem; 
-	flex: 1;
+    background-color: white;
+    border-radius: 25px;
+    padding-bottom: 1rem;
+    padding-right: auto;
+    margin-top: 1rem;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
+    flex: 1;
+    width: 100%;
 }
 
 .infobox img {
-	width: 302px;
-	position: relative;
-	margin-right: -5rem;
-	margin-top: -2rem;
-	align-self: end;
+    width: 302px;
+    position: relative;
+    align-self: end;
+    transform: translateX(2em);
 }
- 
 
 .infobox h2 {
-		padding-top:1.2rem;
-		color:#de6e4b;
-		padding-left:2rem;
-		font-family:Posten;
+    padding-top: 1.2rem;
+    color: #de6e4b;
+    padding-left: 2rem;
+    font-family: Posten;
 }
 
 .infobox p {
-		font-size:1rem;
-		padding-left:2rem;
+    font-size: 1rem;
+    padding-left: 2rem;
 }
 
 .HomeBar {
@@ -79,9 +76,9 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     gap: 50px;
-	outline-style: solid; 
-	outline-color: black; 
-	outline-width: 0.2rem; 
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
 
     /* margin: auto; */
     /* width: 50%; */
@@ -89,25 +86,26 @@ h1 {
 }
 
 .HomeBar iframe {
-	border-radius: 12px;
+    border-radius: 12px;
     width: 576px;
     height: 324px;
     margin-top: 2%;
     margin-bottom: 2%;
-	outline-style: solid; 
-	outline-color: black; 
-	outline-width: 0.2rem; 
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
 }
 
-@media (max-width: 1180px) { /*vertical layout*/
+@media (max-width: 1180px) {
+    /*vertical layout*/
     .HomeBar {
         flex-direction: column;
         align-items: center;
-		gap: 0;
+        gap: 0;
     }
 
     .HomeLogoColumn {
-		padding-top: 4rem !important;
+        padding-top: 4rem !important;
         padding-bottom: 0rem !important;
         max-width: 100%;
     }
@@ -117,18 +115,24 @@ h1 {
         max-width: 100%;
         aspect-ratio: 16/9;
     }
-	
-	.infobox img {
-		position: absolute !important;
-	}
+
+    .infobox {
+        flex-direction: column-reverse;
+    }
+
+    .infobox img {
+        position: relative;
+        align-self: center;
+        transform: translateX(0);
+    }
 }
 
-@media (max-width: 1284px) { /*nathan art doesnt become bottomless*/
+@media (max-width: 1284px) {
+    /*nathan art doesnt become bottomless*/
 
-	.infobox img {
-		margin-top: 0rem !important;
-		align-self: end;
-	}
+    .infobox img {
+        margin-top: 0rem !important;
+    }
 }
 
 .HomeLogoColumn {
@@ -137,68 +141,66 @@ h1 {
     justify-content: end;
 
     padding-bottom: 3rem;
-	padding-top: 0;
+    padding-top: 0;
 }
 
 .HomeLogoColumn p {
     color: white;
-	font-family: Posten;
-	
-	font-size: 1.6rem;
-  text-shadow:
-    -0.2rem -0.2rem 0 #005583,
-     0   -0.2rem 0 #005583,
-     0.2rem -0.2rem 0 #005583,
-     0.2rem  0   0 #005583,
-     0.2rem  0.2rem 0 #005583,
-     0    0.2rem 0 #005583,
-    -0.2rem  0.2rem 0 #005583,
-    -0.2rem  0   0 #005583;
-	-webkit-text-stroke: 1px white;
+    font-family: Posten;
 
-	/* outline-style: solid;  */
-	/* outline-color: #005583;  */
-	/* outline-width: 0.2rem;  */
-	
+    font-size: 1.6rem;
+    text-shadow:
+        -0.2rem -0.2rem 0 #005583,
+        0 -0.2rem 0 #005583,
+        0.2rem -0.2rem 0 #005583,
+        0.2rem 0 0 #005583,
+        0.2rem 0.2rem 0 #005583,
+        0 0.2rem 0 #005583,
+        -0.2rem 0.2rem 0 #005583,
+        -0.2rem 0 0 #005583;
+    -webkit-text-stroke: 1px white;
+
+    /* outline-style: solid;  */
+    /* outline-color: #005583;  */
+    /* outline-width: 0.2rem;  */
 }
 
 .HomeLogoColumn img {
     width: 505px;
     max-width: 100%;
     image-rendering: pixelated;
-	padding-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .navbar {
     background-color: #005583;
-	z-index: 1000;
-	 /* outline-style: solid; */
-  /* outline-color: black; */
-  /* outline-width: 4px; */
+    z-index: 1000;
+    /* outline-style: solid; */
+    /* outline-color: black; */
+    /* outline-width: 4px; */
 }
 
 .navbarSticky {
-	background-color: #005583;
-	z-index: 999;
-  position: fixed;
-  
-  width: 100%;
-  top: -100%;
-  
-	transition: top 1s ease-in-out
+    background-color: #005583;
+    z-index: 999;
+    position: fixed;
+
+    width: 100%;
+    top: -100%;
+
+    transition: top 1s ease-in-out;
 }
 
 .navbarSticky.visible {
-  top: 0;
+    top: 0;
 }
 
 .galleryGrid {
-	margin-left:auto;
-	margin-right:auto;
-	display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
     flex-wrap: wrap;
     width: 60rem;
-   
 }
 
 .screenshot {
@@ -212,4 +214,3 @@ h1 {
     height: auto;
     display: block;
 }
-
