@@ -39,7 +39,7 @@ h1 {
     background-color: white;
     border-radius: 25px;
     padding-bottom: 1rem;
-    padding-right: auto;
+    margin-inline-start: 320px;
     margin-top: 1rem;
     outline-style: solid;
     outline-color: black;
@@ -50,7 +50,7 @@ h1 {
 
 .infobox img {
     width: 302px;
-    position: relative;
+    position: absolute;
     align-self: end;
     transform: translateX(2em);
 }
@@ -130,6 +130,7 @@ h1 {
 
     .infobox .about {
         flex-grow: 1;
+        margin-inline-start: 0;
         padding-block-end: 40px;
         margin-block-end: 220px;
     }
