@@ -255,6 +255,12 @@ h1 {
     animation-delay: 0s, 1s;
 }
 
+@media (prefers-reduced-motion) {
+    .fadein {
+        animation-fill-mode: none;
+    }
+}
+
 @keyframes nothing {
     0% {
         opacity: 0;
