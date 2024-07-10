@@ -28,7 +28,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
-    width: 75%;
+    width: 77%;
     gap: 50px;
     outline-style: solid;
     outline-color: black;
@@ -57,7 +57,7 @@ h1 {
 
 .infobox h2 {
     padding-top: 1.2rem;
-    color: #/ de6e4b;
+    color: #de6e4b;
     padding-left: 2rem;
     font-family: Posten;
 }
@@ -71,7 +71,9 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: #045490;
     background-image: url("./Resources/Assets/background.png");
+    background-attachment: fixed;
     image-rendering: pixelated;
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,13 +269,14 @@ h1 {
     }
     50% {
         opacity: 0;
+        transform: translateY(0.6rem);
     }
 }
 
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(0.6rem);
     }
     100% {
         opacity: 1;
