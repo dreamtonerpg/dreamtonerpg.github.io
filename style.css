@@ -87,6 +87,7 @@ h1 {
 
 .HomeBar iframe {
     border-radius: 12px;
+    background-color: black;
     width: 576px;
     height: 324px;
     margin-top: 2%;
@@ -226,4 +227,48 @@ h1 {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.fadein {
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.delay0 {
+    animation:
+        nothing,
+        fadeInAnimation 0.5s;
+    animation-delay: 0s, 0s;
+}
+
+.delay1 {
+    animation:
+        nothing 0.5s,
+        fadeInAnimation 0.5;
+    animation-delay: 0s, 0.5s;
+}
+
+.delay2 {
+    animation:
+        nothing 1s,
+        fadeInAnimation 0.5;
+    animation-delay: 0s, 1s;
+}
+
+@keyframes nothing {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
