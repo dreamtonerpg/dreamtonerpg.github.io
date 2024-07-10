@@ -123,9 +123,15 @@ h1 {
     }
 
     .infobox img {
-        position: relative;
+        position: absolute;
         align-self: center;
         transform: translateX(0);
+    }
+
+    .infobox .about {
+        flex-grow: 1;
+        padding-block-end: 40px;
+        margin-block-end: 220px;
     }
 }
 
