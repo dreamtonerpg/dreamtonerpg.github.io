@@ -1,0 +1,300 @@
+@font-face {
+    font-family: "Posten"; /*a name to be used later*/
+    src: url("./Resources/Fonts/PoetsenOne-Regular.otf"); /*URL to font*/
+}
+
+body {
+    background-color: #00c196;
+    /* background-image: url("./Resources/Assets/vriska.png"); */
+}
+h1 {
+    color: blue;
+}
+
+.infoboxcenterfkery {
+    display: flex;
+    justify-content: center;
+    margin-left: 0rem;
+}
+
+.infobox {
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #eaad61;
+    display: flex;
+    flex-direction: row;
+    /* padding-right: -1rem; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    width: 77%;
+    gap: 50px;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
+}
+
+.infobox .about {
+    background-color: white;
+    border-radius: 25px;
+    padding-bottom: 1rem;
+    margin-inline-start: 320px;
+    margin-top: 1rem;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
+    flex: 1;
+    width: 100%;
+}
+
+.infobox img {
+    width: 302px;
+    position: absolute;
+    align-self: end;
+    transform: translateX(2em);
+}
+
+.infobox h2 {
+    padding-top: 1.2rem;
+    color: #de6e4b;
+    padding-left: 2rem;
+    font-family: Posten;
+}
+
+.infobox p {
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+.HomeBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+	background-color: 045490;
+    background-image: url("./Resources/Assets/background.png");
+	background-attachment:fixed;
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 50px;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
+
+    /* margin: auto; */
+    /* width: 50%; */
+    /* padding: 10px; */
+}
+
+.HomeBar iframe {
+    border-radius: 12px;
+    background-color: black;
+    width: 576px;
+    height: 324px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
+}
+
+@media (max-width: 755px){
+	.navbarSticky img {
+		display:none;
+	}
+}
+
+@media (max-width: 1180px) {
+
+    /*vertical layout*/
+    .HomeBar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        padding-inline: 1rem;
+    }
+
+    .HomeLogoColumn {
+        padding-top: 4rem !important;
+        padding-bottom: 0rem !important;
+        max-width: 100%;
+    }
+
+    .HomeBar iframe {
+        height: unset;
+        max-width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    .infobox {
+        flex-direction: column-reverse;
+    }
+
+    .infobox img {
+        position: absolute;
+        align-self: center;
+        transform: translateX(0);
+    }
+
+    .infobox .about {
+        flex-grow: 1;
+        margin-inline-start: 0;
+        padding-block-end: 40px;
+        margin-block-end: 220px;
+    }
+}
+
+@media (max-width: 1284px) {
+    /*nathan art doesnt become bottomless*/
+
+    .infobox img {
+        margin-top: 0rem !important;
+    }
+}
+
+.HomeLogoColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    padding-bottom: 3rem;
+    padding-top: 0;
+}
+
+.HomeLogoColumn p {
+    color: white;
+    font-family: Posten;
+
+    font-size: 1.6rem;
+    text-shadow:
+        -0.2rem -0.2rem 0 #005583,
+        0 -0.2rem 0 #005583,
+        0.2rem -0.2rem 0 #005583,
+        0.2rem 0 0 #005583,
+        0.2rem 0.2rem 0 #005583,
+        0 0.2rem 0 #005583,
+        -0.2rem 0.2rem 0 #005583,
+        -0.2rem 0 0 #005583;
+    -webkit-text-stroke: 1px white;
+
+    /* outline-style: solid;  */
+    /* outline-color: #005583;  */
+    /* outline-width: 0.2rem;  */
+}
+
+.HomeLogoColumn img {
+    width: 505px;
+    max-width: 100%;
+    image-rendering: pixelated;
+    padding-bottom: 0.5rem;
+}
+
+.navbar {
+    background-color: #005583;
+    z-index: 1000;
+    /* outline-style: solid; */
+    /* outline-color: black; */
+    /* outline-width: 4px; */
+}
+
+.navbarSticky {
+    background-color: #005583;
+    z-index: 999;
+    position: fixed;
+
+    width: 100%;
+    top: -100%;
+
+    transition: top 1s ease-in-out;
+}
+
+.navbarSticky img {
+		display:auto;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 90%;
+}
+
+.navbarSticky.visible {
+    top: 0;
+}
+
+.galleryGrid {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 60rem;
+}
+
+.screenshot {
+    image-rendering: pixelated;
+    width: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.screenshot img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fadein {
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.delay0 {
+    animation:
+        nothing,
+        fadeInAnimation 0.5s;
+    animation-delay: 0s, 0s;
+}
+
+.delay1 {
+    animation:
+        nothing 0.5s,
+        fadeInAnimation 0.5;
+    animation-delay: 0s, 0.5s;
+}
+
+.delay2 {
+    animation:
+        nothing 1s,
+        fadeInAnimation 0.5;
+    animation-delay: 0s, 1s;
+}
+
+@media (prefers-reduced-motion) {
+    .fadein {
+        animation-fill-mode: none;
+    }
+}
+
+@keyframes nothing {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+		transform: translateY(0.6rem);
+
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(0.6rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
