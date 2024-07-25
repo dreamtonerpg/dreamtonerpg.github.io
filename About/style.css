@@ -19,6 +19,7 @@ h1 {
 
 .infobox {
     position: relative;
+
     margin-top: 3rem;
     margin-bottom: 3rem;
     background-color: #eaad61;
@@ -28,7 +29,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
-    width: 75%;
+    width: 77%;
     gap: 50px;
     outline-style: solid;
     outline-color: black;
@@ -57,7 +58,7 @@ h1 {
 
 .infobox h2 {
     padding-top: 1.2rem;
-    color: #/ de6e4b;
+    color: #de6e4b;
     padding-left: 2rem;
     font-family: Posten;
 }
@@ -71,7 +72,9 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+	background-color: 045490;
     background-image: url("./Resources/Assets/background.png");
+	background-attachment:fixed;
     image-rendering: pixelated;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,7 +100,14 @@ h1 {
     outline-width: 0.2rem;
 }
 
+@media (max-width: 755px){
+	.navbarSticky img {
+		display:none;
+	}
+}
+
 @media (max-width: 1180px) {
+
     /*vertical layout*/
     .HomeBar {
         flex-direction: column;
@@ -154,6 +164,15 @@ h1 {
     padding-top: 0;
 }
 
+
+h1 {
+	color: white;
+    font-family: Posten;
+
+    font-size: 3rem;
+	
+}
+
 .HomeLogoColumn p {
     color: white;
     font-family: Posten;
@@ -201,6 +220,13 @@ h1 {
     transition: top 1s ease-in-out;
 }
 
+.navbarSticky img {
+		display:auto;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 90%;
+}
+
 .navbarSticky.visible {
     top: 0;
 }
@@ -211,7 +237,9 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 60rem;
+    max-width: 70rem;
+
+	
 }
 
 .screenshot {
@@ -223,11 +251,7 @@ h1 {
     padding: 5px;
 }
 
-.screenshot img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+
 
 .fadein {
     animation-iteration-count: 1;
@@ -267,16 +291,75 @@ h1 {
     }
     50% {
         opacity: 0;
+		transform: translateY(0.6rem);
+
     }
 }
 
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(0.6rem);
     }
     100% {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.flip-container {
+
+    perspective: 1000px;
+	padding:1rem;
+    
+}
+
+.flipper {
+	padding: 5px;
+	display:flex;
+	width: 210px; 
+	height: 251px; 
+	outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.6s;
+	
+	
+}
+
+.flipper:hover {
+	cursor: pointer;
+}
+
+.flipper.flipped {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
+}
+
+.front img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+
 }
