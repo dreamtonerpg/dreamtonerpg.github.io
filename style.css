@@ -339,11 +339,14 @@ h1 {
 /* ABOUT */
 
 .aboutContainer {
+    padding-inline: 20px;
     padding-top: 4rem;
     padding-bottom: 4rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     max-width: 70rem;
     justify-content: center;
@@ -351,7 +354,7 @@ h1 {
 }
 
 .aboutColumn {
-    flex: 1;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -366,8 +369,8 @@ h1 {
 
 .aboutbox {
     z-index: 2;
-    flex: 1;
     background-color: #eaad61;
+    flex-grow: 1;
     position: relative;
     margin: 10px;
 
@@ -456,17 +459,18 @@ h1 {
 
 .image-outside-top-right {
     /* bodyguard */
-    right: -20px;
-    width: 50%;
-    top: -12%;
+    right: -10px;
+    width: 200px;
+    top: 0;
+    transform: translateY(calc(-100% + 100px));
 }
 
 .image-outside-top-right-2 {
     /* shameful */
-    right: 10%;
+    left: -10px;
     z-index: 1;
-    top: -29.6%;
-    width: 100%;
+    top: -136px;
+    width: 500px;
 }
 
 .image-outside-top-right-4 {
@@ -526,6 +530,7 @@ h1 {
 
 #box1 {
     z-index: 2;
+    padding-bottom: 100px;
 }
 
 #box2 .container {
@@ -542,7 +547,8 @@ h1 {
 .cast-grid {
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 70rem;
@@ -640,13 +646,43 @@ h1 {
     position: absolute;
     right: 0px;
     bottom: 0;
-    width: min(32%, 520px);
+    width: max(200px, min(32%, 520px));
 }
 
 .footerText {
     position: absolute;
     width: 300px;
-    right: max(50% - 150px, 32%);
+    right: max(50% - 150px, 200px);
+}
+
+@media (max-width: 800px) {
+    .neil {
+        margin: none;
+        width: min(400px);
+        position: absolute;
+        right: unset;
+        top: -240px;
+    }
+
+    .neilContainer {
+        display: contents;
+    }
+
+    .footerText {
+        position: unset;
+    }
+
+    main {
+        padding-block-end: 200px;
+    }
+
+    footer {
+        display: flex;
+        height: unset !important;
+        align-items: center;
+        justify-items: end;
+        flex-direction: column;
+    }
 }
 
 footer {
