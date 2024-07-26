@@ -354,7 +354,7 @@ h1 {
 }
 
 .aboutColumn {
-    max-width: 600px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -475,7 +475,7 @@ h1 {
 
 .image-outside-top-right-4 {
     /* cop */
-    left: 83%;
+    right: -4px;
     z-index: 1;
     top: -9%;
     width: 25%;
