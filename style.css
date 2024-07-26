@@ -7,6 +7,11 @@ body {
     background-color: #00c196;
     /* background-image: url("./Resources/Assets/vriska.png"); */
 }
+
+.body2 {
+	background-image: linear-gradient(to bottom, rgba(0,193,150,0.5), rgba(06,193,150,1));
+}
+
 h1 {
     color: blue;
 }
@@ -20,7 +25,7 @@ h1 {
 .infobox {
     position: relative;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     background-color: #eaad61;
     display: flex;
     flex-direction: row;
@@ -65,6 +70,24 @@ h1 {
 .infobox p {
     font-size: 1rem;
     padding-left: 2rem;
+}
+
+.galleryBox {
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #eaad61;
+    display: flex;
+    flex-direction: row;
+    /* padding-right: -1rem; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    width: 77%;
+    gap: 50px;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
 }
 
 .HomeBar {
@@ -228,21 +251,33 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     max-width: 60rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .screenshot {
     image-rendering: pixelated;
+	
     width: 250px;
     flex-grow: 0;
     flex-shrink: 0;
     box-sizing: border-box;
     padding: 5px;
+	cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .screenshot img {
+	outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
     width: 100%;
     height: auto;
     display: block;
+}
+
+.screenshot:hover {
+    transform: scale(1.05);
 }
 
 .fadein {
@@ -303,6 +338,214 @@ h1 {
 
 /* ABOUT */
 
+.aboutContainer {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	
+	max-width: 70rem;
+	justify-content: center;
+	gap: 40px;
+
+}
+
+.aboutColumn {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding-bottom:1rem;
+	
+}
+
+.row {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.aboutbox {
+
+	z-index: 2;
+	flex: 1;
+	background-color: #eaad61;
+	position: relative;
+	margin: 10px;
+	
+	box-sizing: border-box;
+	
+	
+
+    /* padding-right: -1rem; */
+    border-radius: 25px;
+    
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
+}
+
+.longaboutbox {
+
+	z-index: 2;
+	flex: 1;
+	background-color: #eaad61;
+	position: relative;
+	margin: 10px;
+	padding-left:0.8rem;
+	padding-right:0.8rem;
+	
+	box-sizing: border-box;
+	
+	
+
+    /* padding-right: -1rem; */
+    border-radius: 25px;
+    
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
+}
+
+.aboutbox h2, .longaboutbox h2 {
+	z-index: 3;
+    padding-top: 2rem;
+    color: black;
+    font-family: Posten;
+	font-size: 1.8rem;
+}
+
+.content {
+
+	position: relative;
+	
+	z-index: 2; 
+	
+	 background-color: white;
+    border-radius: 25px;
+    padding-bottom: 1rem;
+   
+    margin-top: 1rem;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
+    flex: 1;
+    width: 100%;
+}
+
+.content p {
+		
+		padding-left: 2rem;
+		padding-top: 1.0rem;
+		padding-right: 2rem;
+}
+
+
+
+.logo, .image-outside, .image-top-left, .image-top-center {
+	position: absolute;
+}
+
+.logo {
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 404px;
+	max-width: 100%;
+	image-rendering: pixelated;
+}
+
+
+.image-outside-top-right, .image-outside-top-right-2, .image-outside-top-right-3 {
+	top: -15%;
+}
+
+.image-outside-top-right { /* bodyguard */
+	right: -20px;
+	width: 50%;
+	top: -12%;
+}
+
+.image-outside-top-right-2 {  /* shameful */
+	right: 10%;
+	z-index: 1;
+	top: -29.6%;
+	width: 100%;
+}
+
+.image-outside-top-right-4 { /* cop */
+	left: 83%;
+	z-index: 1;
+	top: -9%;
+	width: 25%;
+}
+
+
+.image-outside-top-right-3 { /* enemies */
+	z-index: 4;
+	right: -110px;
+	width: 40%;
+	top: -4%;
+}
+
+.image-top-left {
+	top: 10px;
+	left: 10px;
+}
+
+.image-top-center {
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#faq .content p {
+	padding-bottom: 0rem;
+	text-align: center;
+	font-weight: bold;
+	font-size:1.4rem;
+
+}
+
+#box1 .content p {
+	padding-bottom: 0rem;
+}
+
+#box3 .content .imgcontainer {
+	padding: 1.5rem;
+}
+
+#box3 .content img {
+	outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
+	
+	width: 100%;
+	image-rendering: pixelated;
+	
+}
+
+#box3 .content p {
+	padding-top: 0;
+}
+
+
+#box1 {
+		z-index: 2;
+}
+
+
+#box2 .container {
+            float: left;
+			width: 300px;
+        }
+#box2 .container img {
+            padding-top:1.8rem;
+			padding-left:1rem;
+        }
+
+/* CAST IMAGES */
 
 .cast-grid {
     margin-left: auto;
@@ -311,6 +554,7 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     max-width: 70rem;
+	padding-top:1rem;
 
 	
 }
@@ -326,8 +570,8 @@ h1 {
 .flipper {
 	padding: 5px;
 	display:flex;
-	width: 210px; 
-	height: 251px; 
+	width: 168px; 
+	height: 200px; 
 	outline-style: solid;
     outline-color: black;
     outline-width: 0.2rem;
@@ -359,17 +603,130 @@ h1 {
 .front img {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    object-fit: cover; 
 }
 
 .back {
+	color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #fff;
     transform: rotateY(180deg);
     box-sizing: border-box;
 
 }
 
+.back p {
+		/* position: relative; */
+		padding-left: 1rem;
+		padding-top: 0rem;
+		padding-right: 0.8rem;
+		/* top: -0.5rem; */
+		line-height: 1.2rem;
+		text-shadow: black 1px 0 5px;
+
+}
+
+.back h1 {
+	padding-top: 0.5rem;
+	padding-left: 1rem;
+	color: white;
+	font-size: 2rem;
+	font-family: Posten;
+	text-shadow: black 1px 0 10px;
+}
+
+
+#nate .back {
+	 background-image: url("./Resources/Assets/Portraits/portraitbg1.png");
+}
+
+#neil .back {
+	 background-image: url("./Resources/Assets/Portraits/portraitbg2.png");
+}
+
+#jenny .back {
+	 background-image: url("./Resources/Assets/Portraits/portraitbg3.png");
+}
+
+#darell .back {
+	 background-image: url("./Resources/Assets/Portraits/portraitbg4.png");
+}
+
+
+.neil {
+	position: absolute;
+    right: 0px;
+    bottom: 0;
+	width:32%;
+}
+
+footer {
+	z-index:3;
+	outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
+    width: 100%;
+    background-color: #005583;
+	padding: 2rem;
+
+    bottom: 0;
+    position: relative;
+}
+
+footer .nav-link{
+    color: #000000;
+}
+
+footer .nav-link:hover{
+    color: #06b896;
+}
+
+footer p{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    color:black;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 720px;
+    image-rendering: pixelated;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a {
+	color: #06bf96;
+}

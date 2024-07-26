@@ -18,6 +18,13 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 	
+	<style>
+	body {
+	background-image: url("./Resources/Assets/background.png");
+	background-size: 150% 100%;
+	}
+	</style>
+	
 	<script>
 	
 	const texts = [
@@ -65,9 +72,8 @@
 	</script>
 
   </head>
-  <body>
+  <body><div class="body2">
     <main>
-
 	<nav class="navbar navbar-dark navbar-expand-md shadow">
         <div class="container-md">
 
@@ -79,23 +85,23 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav ms-auto fs-5">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
+						<a class="nav-link" aria-current="page" href="./index.html">Home</a>
+						</li>
 
-                    <span class="d-none d-md-block navbar-text text-white">
-                        <i class="bi bi-dot"></i>
-                    </span>
+						<span class="d-none d-md-block navbar-text text-white">
+							<i class="bi bi-dot"></i>
+						</span>
 
-                    <li class="nav-item">
-                    <a class="nav-link" href="./about.html">About</a>
-                    </li>
+						<li class="nav-item">
+						<a class="nav-link" href="./about.html">About</a>
+						</li>
 
-                    <span class="d-none d-md-block navbar-text text-white" >
-                        <i class="bi bi-dot"></i>
-                    </span>
+						<span class="d-none d-md-block navbar-text text-white" >
+							<i class="bi bi-dot"></i>
+						</span>
 
-                    <li class="nav-item">
-                    <a class="nav-link" href="./faq.html">FAQ</a>
+						<li class="nav-item">
+						<a class="nav-link active" href="#">FAQ</a>
                     </li>
                 </ul>
             </div>
@@ -115,7 +121,7 @@
 				
 					<ul class="navbar-nav ms-auto fs-5">
 						<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<a class="nav-link" aria-current="page" href="./index.html">Home</a>
 						</li>
 
 						<span class="d-none d-md-block navbar-text text-white">
@@ -131,40 +137,125 @@
 						</span>
 
 						<li class="nav-item">
-						<a class="nav-link" href="./about.html">FAQ</a>
+						<a class="nav-link active" href="#">FAQ</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
+	<div class="aboutContainer">
+		<div class="aboutColumn">
+            <div class="longaboutbox" id="faq">
+				<center><h2>FAQ</h2></center>
+                <div class="content">
+					<h2 style="text-align: center; margin-top: 2rem; color: #de6e4b;">
+							When will the game release?
+						</h2>
+						<div class="info"><p style="margin-top: 2.5%;">
+							We're planning to release the game in volumes, and to release them separately. As such, we don't know when each volume will be available
+						</p></div>
 
-		<div class="HomeBar">
-			<div class="HomeLogoColumn">
-				<div><img class="fadein delay0" src="./Resources/Assets/logo.png"</img></div>
-				<div><center><p class="fadein delay1">Uncover a conspiracy beyond your<br>wildest dreams!</p></center></div>
+						<div>
+							<hr class="m-5 my-10" style="border:black; border-width:10px 0 0;padding-top: 0.1rem;">
+						</div>
+						
+						
+						<h2 style="text-align: center; margin-top: 2rem; color: #de6e4b;">
+							What platforms will DREAMTONE be available on?
+						</h2>
+						<div class="info"><p style="margin-top: 2.5%;">
+							DREAMTONE will only be available on PC at release. Post-release, we may decide to port to consoles
+						</p></div>
+
+						<div>
+							<hr class="m-5 my-10" style="border:black; border-width:10px 0 0;padding-top: 0.1rem;">
+						</div>
+						
+						
+						<h2 style="text-align: center; margin-top: 2rem; color: #de6e4b;">
+							What languages will DREAMTONE feature?
+						</h2>
+						<div class="info"><p style="margin-top: 2.5%;">
+							English and Japanese.
+						</p></div>
+
+						<div>
+							<hr class="m-5 my-10" style="border:black; border-width:10px 0 0;padding-top: 0.1rem;">
+						</div>
+						
+						
+						<h2 style="text-align: center; margin-top: 2rem; color: #de6e4b;">
+							How much will the game cost?
+						</h2>
+						<div class="info"><p style="margin-top: 2.5%;">
+							Depends on the volume.
+						</p></div>
+
+						<div>
+							<hr class="m-5 my-10" style="border:black; border-width:10px 0 0;padding-top: 0.1rem;">
+						</div>
+						
+						
+						<h2 style="text-align: center; margin-top: 2rem; color: #de6e4b;">
+							Will there be a demo?
+						</h2>
+						<div class="info"><p style="margin-top: 2.5%;">
+							Yeah!
+						</p></div>
+
+						<div>
+							<hr class="m-5 my-10" style="border:black; border-width:10px 0 0;padding-top: 0.1rem;">
+						</div>
+						
+						
+						<h2 style="text-align: center; margin-top: 2rem; color: #de6e4b;">
+							What's DREAMTONE developed in?
+						</h2>
+						<div class="info"><p style="margin-top: 2.5%;">
+							Godot (pronounced as Go-Dough)
+						</p></div>
+
+						<div>
+							<hr class="m-5 my-10" style="border:black; border-width:10px 0 0;padding-top: 0.1rem;">
+						</div>
+						
+						
+						<h2 style="text-align: center; margin-top: 2rem; color: #de6e4b;">
+							Where can I follow you guys for updates?
+						</h2>
+						<div class="info"><p style="margin-top: 2.5%;">
+							On our <a href='https://twitter.com/HYPERSOMNIAGame'>HypersomniaTwitter (also known as X) page.</a>
+						</p></div>
+
+						<div>
+							<hr class="m-5 my-10" style="border:black; border-width:10px 0 0;padding-top: 0.1rem;">
+						</div>
+						
+						
+						<h2 style="text-align: center; margin-top: 2rem; color: #de6e4b;">
+							What are the minimum system requirements?
+						</h2>
+						<div class="info"><p style="margin-top: 2.5%;">
+							The game is developed on a middle-eastern shawarma grill, you can run it on almost anything that has OpenGL support
+						</p></div>
+
+						<div>
+							<hr class="m-5 my-10" style="border:black; border-width:10px 0 0;padding-top: 0.1rem;">
+						</div>
+						
+						
+						<h2 style="text-align: center; margin-top: 2rem; color: #de6e4b;">
+							Will there be a demo?
+						</h2>
+						<div class="info"><p style="margin-top: 2.5%; padding-bottom: 1rem">
+							We're planning to release the game in volumes, and to release them separately. As such, we don't know when each volume will be available
+						</p></div>
+						</div>
+				</div>
 			</div>
-		  <div><iframe class="fadein delay2" src="https://www.youtube.com/embed/rbV3lJjjML8" title="DREAMTONE | MOTHER Direct 2024 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-		</div>
-
-	<div class="infoboxcenterfkery"><div class="infobox">
-		<img src="./Resources/Assets/NathanAbout.png"</img>
-		<div class="about">
-		<h2>"What the hey is a DREAMTONE?"</h2>
-		<p><b>DREAMTONE</b> is a traditional RPG, set in a whimsical pastiche of the American 1980s!<br></p>
-		<p>Play as <b>Nathan Bloom</b>, an average American boy, and take on bounty hunters, street punks,<br> devious demons, and even the ghoulish undead in turn-based combat. Explore the rich<br>and vibrant world of the 1980s and uncover a sinister mystery that's rocking the country!</p>
-		</div>
-	</div></div>
-	<div class="infoboxcenterfkery"><div class="galleryBox">
-	<div class="galleryGrid">
-	<div class="screenshot"><img src="./Resources/Assets/Screenshots/screen2.png" class="grid-image"</img></div>
-	<div class="screenshot"><img src="./Resources/Assets/Screenshots/screen3.png" class="grid-image"</img></div>
-	<div class="screenshot"><img src="./Resources/Assets/Screenshots/screen5.png" class="grid-image"</img></div>
-	<div class="screenshot"><img src="./Resources/Assets/Screenshots/screen1.png" class="grid-image"</img></div>
-	<div class="screenshot"><img src="./Resources/Assets/Screenshots/screen6.png" class="grid-image"</img></div>
-	<div class="screenshot"><img src="./Resources/Assets/Screenshots/screen4.png" class="grid-image"</img></div>
 	</div>
 	</div>
-
+	</div>
     </main>
 	
 	<footer id="footer">
@@ -196,9 +287,6 @@
 		    
 		 
     </div>
-<div id="image-modal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modal-image">
-<script src="imageViewer.js"></script>
-  </body>
+
+  </body></div>
 </html>

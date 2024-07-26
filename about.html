@@ -17,7 +17,42 @@
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+	<style>
+	body {
+	background-image: url("./Resources/Assets/background.png");
+	background-size: 150% 100%;
+	}
+	</style>
+	
 	<script>
+	
+	const texts = [
+    "<b>Give it more than your best!<b>",
+	"<b>Sometimes, the best answer is no answer!<b>",
+	"<b>Look both ways before crossing your mom!<b>",
+	"<b>Don't stay up too late, you'll get <a href='https://twitter.com/HYPERSOMNIAGame'>Hypersomnia</a><b>",
+	"<b>Have you heard Rockstop's new album?<b>",
+	"<b>In the middle of Knowhere.<b>",
+	"<b>Somewhere in the distance...<b>",
+	"<b>Don't forget to turn your feelings on!<b>",
+	"<b>Parallel park into the future!<b>",
+	"<b>Ottawa!<b>",
+	"<b>Go the distance!<b>",
+	"<b>All good devils hide in plain sight.",
+	"<b>Ideas for only a penny a pop!",
+	"<b>Eden is a shopping mall in Michigan.",
+	"<b>Sisyphus ain't got nothing on us!",
+	"<b>Beware the tales of the old world!"
+	];
+
+	function pickRandomText() {
+		const randomIndex = Math.floor(Math.random() * texts.length);
+		const randomText = texts[randomIndex];
+		document.getElementById("replaceableText").innerHTML = randomText;
+	}
+	
+	window.onload = pickRandomText;
+	
 	 $(document).ready(function () {
       var stickyNavbar = $('#stickyNavbar');
       var stickyOffset = 440
@@ -34,9 +69,9 @@
 	</script>
 
   </head>
-  <body>
+  <body><div class="body2">
     <main>
-
+	
 	<nav class="navbar navbar-dark navbar-expand-md shadow">
         <div class="container-md">
 
@@ -63,7 +98,7 @@
                     </span>
 
                     <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" href="./about.html">FAQ</a>
                     </li>
                 </ul>
             </div>
@@ -96,41 +131,136 @@
 						</span>
 
 						<li class="nav-item">
-						<a class="nav-link" href="#">FAQ</a>
+						<a class="nav-link" href="./about.html">FAQ</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-		<h1>Meet the Cast!</h1>
-		<div class="cast-grid">
-			<div class="flip-container">
-				<div class="flipper" onclick="this.classList.toggle('flipped')">
-					<div class="front"><img src="Resources/Assets/Portraits/portrait1.png" alt="nathan"></div>
-					<div class="back"><div class="text"> burger </div></div>
+		
+		
+		<div class="aboutContainer">
+        <div class="aboutColumn">
+            <div class="row">
+                <div class="aboutbox" id="box1">
+
+					<img src="./Resources/Assets/About/Smoke.png" alt="BodyguardSmoking" class="image-outside image-outside-top-right">
+					<h2>"So… What <i>is </i> DREAMTONE?"</h2>
+                    <div class="content">
+						
+                        <p>DREAMTONE is a traditional RPG, whimsically harkening back to the long-gone days of the 1980s. It’s a love letter to the wacky, strange, and sinister stories of the past while being something completely new. It’s a game about a world with too many dues to count, where the children foot the bill for the sake of the future. <br>It’s about the power of dreams, and how those with twisted and warped dreams will use any means necessary to enact their will. <br>It’s about a group of unlikely friends trekking across America, fighting demons and any monsters that cross their path.<br> It’s about an American poster-boy beating up rats with his baseball bat and hitting projectiles back at his foes.</p>
+                    </div>
+                </div>
+                <div class="aboutbox" id="box2">
+
+                    <img src="./Resources/Assets/About/ShamefulWhipped.png" alt="Shameful :o<" class="image-outside image-outside-top-right-2">
+                    <img src="./Resources/Assets/About/cop.png" alt="Shameful :o<" class="image-outside image-outside-top-right-4">
+					<h2>Meet the Cast!</h2>
+
+                    <div class="content">
+						<div class="cast-grid">
+						<div class="flip-container">
+							<div class="flipper" id="nate" onclick="this.classList.toggle('flipped')">
+								<div class="front"><img src="Resources/Assets/Portraits/portrait1.png" alt="nathan"></div>
+								<div class="back"><div class="text">
+								
+								<h1>Nathan Bloom</h1>
+								<p><b>Age:</b> 16</p>
+								<p>Your average American comic geek.</p>
+								
+								</div></div>
+							</div>
+						</div>
+						<div class="flip-container">
+							<div class="flipper" id="neil" onclick="this.classList.toggle('flipped')">
+								<div class="front"><img src="Resources/Assets/Portraits/portrait2.png"></div>
+								<div class="back"><div class="text">
+								
+								<h1>Neil Bloom</h1>
+								<p><b>Age:</b> 19</p>
+								<p>Former poster-boy turned ex-con man.</p>
+								
+								</div></div>
+							</div>
+						</div>
+						<div class="flip-container">
+							<div class="flipper" id="jenny" onclick="this.classList.toggle('flipped')">
+								<div class="front"><img src="Resources/Assets/Portraits/portrait3.png" alt="jenny"></div>
+								<div class="back" alt="jennyText"><div class="text">
+								
+								<h1>Jenny Perkins</h1>
+								<p><b>Age:</b> 21</p>
+								<p>Lead singer of the up-and-coming band Rockstop.</p>
+								
+								</div></div>
+							</div>
+						</div>
+						<div class="flip-container">
+							<div class="flipper" id="darell" onclick="this.classList.toggle('flipped')">
+								<div class="front"><img src="Resources/Assets/Portraits/portrait4.png" alt="darell"></div>
+								<div class="back" alt="darellText"><div class="text">  
+								
+								<h1>Darell <br> ⠀</h1>
+								<p><b>Age:</b> ?</p>
+								<p>Self-proclaimed agent of the state.</p>
+								
+								</div></div>
+							</div>
+						</div>
+					</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutColumn">
+            <div class="longaboutbox" id="box3">
+                <img src="./Resources/Assets/About/falling.png" alt="EnemyFall" class="image-outside image-outside-top-right-3">
+				<h2>Features</h2>
+                <div class="content">
+				
+				<div class="imgcontainer"><img src="./Resources/Assets/Screenshots/screen7.png"</img></div>
+				<p>DREAMTONE features a strange and reactive world that actively changes depending on the character you're playing as. Playing as the younger, less experienced protagonist Nathan Bloom may not get you into certain areas; but play as his older, charming brother, and you'll be able to smooth talk your way into almost any area. As you change characters, you'll notice the world shift and morph around you. NPCs will talk to you differently, and you'll have access to different abilities within the overworld that can change how you play.</p>
+                <div class="imgcontainer"><img src="./Resources/Assets/Screenshots/screen8.png"</img></div>
+				<p>Here, battles are unique and engaging games of back and forth strategy with you and your enemies. Different enemies have different tactics, and will take on different behaviors depending on a variety of factors in battle. But don't fret! You don't have to take the brunt of all enemy attacks - using a button-press you can counter an enemy's attack and send it right back at them!</p>
 				</div>
-			</div>
-			<div class="flip-container">
-				<div class="flipper" onclick="this.classList.toggle('flipped')">
-					<div class="front"><img src="Resources/Assets/Portraits/portrait2.png" alt="neil"></div>
-					<div class="back"><div class="text"> Reigen Arakata </div></div>
-				</div>
-			</div>
-			<div class="flip-container">
-				<div class="flipper" onclick="this.classList.toggle('flipped')">
-					<div class="front"><img src="Resources/Assets/Portraits/portrait3.png" alt="jenny"></div>
-					<div class="back"><div class="text"> Hey.<br>Listen.<br> she is<br> drawings </div></div>
-				</div>
-			</div>
-			<div class="flip-container">
-				<div class="flipper" onclick="this.classList.toggle('flipped')">
-					<div class="front"><img src="Resources/Assets/Portraits/portrait4.png" alt="jenny"></div>
-					<div class="back"><div class="text">  </div></div>
-				</div>
-			</div>
-		</div>
+            </div>
+        </div>
+    </div>
+	
+
+		
+
+	
+	
 
     </main>
 
-  </body>
+		<footer id="footer">
+		<div class="neilContainer">
+        <img src="./Resources/Assets/About/Approved.png" class="neil"> 
+		
+		<p id="replaceableText"></p>
+		
+       <center><p style="padding-bottom: 0;"><b>Social Media</p></center>
+
+        <div class="d-flex justify-content-center" style="overflow: hidden">
+		<div class="d-flex justify-content-center" style="padding-top: 0rem;">
+		</div>
+			
+
+		<!-- <p class="d-inline-flex gap-4"> -->
+			<!-- <a type="button" href="https://twitter.com/DREAMTONEgame" class="btn btn-primary bi bi-twitter"></a> -->
+			<!-- <a type="button" href="https://www.youtube.com/channel/UCVATFoQAiR01cGVx1tTJIeA" class="btn btn-danger bi bi-youtube"></a> -->
+			<!-- <a type="button" href="https://discord.gg/f56t7p6VY7" class="btn btn-secondary bi bi-discord"></a> -->
+			
+		<!-- </p> -->
+            <h3><a title="Twitter" href="https://twitter.com/DREAMTONEgame" class="nav-link bi bi-twitter" aria-hidden="true"> </a><span class="sr-only"></span></h3>
+            <h3><a title="Youtube" href="https://www.youtube.com/channel/UCVATFoQAiR01cGVx1tTJIeA" class="nav-link bi bi-youtube" aria-hidden="true"> </a><span class="sr-only"></span></h3>
+            <h3><a title="Discord" href="https://discord.gg/f56t7p6VY7" class="nav-link bi bi-discord" aria-hidden="discord"> </a><span class="sr-only"></span></h3>
+        </div>
+        
+    
+        </footer>
+
+  </div></body>
 </html>
