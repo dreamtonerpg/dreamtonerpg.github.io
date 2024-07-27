@@ -143,10 +143,6 @@ h1 {
 		/* shameful */
 		left: -60px !important;
 	}
-	
-	#LONGBOX {
-		max-width: 550px !important;
-	}
 
 }
 
@@ -692,8 +688,8 @@ h1 {
         width: min(400px);
         position: absolute;
         right: unset;
-        top: -240px;
-		max-width: 400px;
+        top: -210px;
+		max-width: 350px;
     }
 
     .neilContainer {
@@ -719,12 +715,22 @@ h1 {
 
 	
 	.aboutColumn {
-		max-width: 400px !important;
+		max-width: 300px !important;
 	}
 	
-	#LONGBOX {
-		max-width: 423px !important;
+	.flipper {
+		padding: 5px;
+		display: flex;
+		width: 134px;
+		height: 159px;
+		outline-style: solid;
+		outline-color: black;
+		outline-width: 0.2rem;
+		position: relative;
+		transform-style: preserve-3d;
+		transition: 0.6s;
 	}
+
 	
 	.longaboutbox {
 		width: 100% !important;
@@ -739,10 +745,10 @@ h1 {
 	
 	.image-outside-top-right-2 {
 		/* shameful */
-		left: -50px;
+		left: -100px !important;
 		z-index: 1;
 		top: -123px;
-		width: 450px;
+		width: 400px;
 	}
 
 	.image-outside-top-right-4 {
