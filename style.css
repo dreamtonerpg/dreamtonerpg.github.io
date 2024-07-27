@@ -132,6 +132,24 @@ h1 {
     }
 }
 
+@media (max-width: 1094px) {
+	.image-outside-top-right-4 {
+		/* cop */
+		right: -100% !important;
+		left: 76% !important;
+	}
+	
+	.image-outside-top-right-2 {
+		/* shameful */
+		left: -60px !important;
+	}
+	
+	#LONGBOX {
+		max-width: 550px !important;
+	}
+
+}
+
 @media (max-width: 1180px) {
     /*vertical layout*/
     .HomeBar {
@@ -170,6 +188,9 @@ h1 {
         padding-block-end: 40px;
         margin-block-end: 220px;
     }
+	
+	
+	
 }
 
 @media (max-width: 1284px) {
@@ -178,6 +199,14 @@ h1 {
     .infobox img {
         margin-top: 0rem !important;
     }
+	
+	.image-outside-top-right-3 {
+    /* enemies */
+    z-index: 4;
+    right: -60px !important;
+    width: 30% !important;
+    top: -0% !important;
+	}
 }
 
 .HomeLogoColumn {
@@ -459,9 +488,9 @@ h1 {
 
 .image-outside-top-right {
     /* bodyguard */
-    right: -10px;
-    width: 200px;
-    top: 0;
+    right: -20px;
+    width: 250px;
+    top: -0px;
     transform: translateY(calc(-100% + 100px));
 }
 
@@ -475,7 +504,7 @@ h1 {
 
 .image-outside-top-right-4 {
     /* cop */
-    right: -4px;
+	right: -6% !important;
     z-index: 1;
     top: -9%;
     width: 25%;
@@ -656,12 +685,15 @@ h1 {
 }
 
 @media (max-width: 800px) {
+	
+	
     .neil {
         margin: none;
         width: min(400px);
         position: absolute;
         right: unset;
         top: -240px;
+		max-width: 400px;
     }
 
     .neilContainer {
@@ -683,6 +715,62 @@ h1 {
         justify-items: end;
         flex-direction: column;
     }
+	
+
+	
+	.aboutColumn {
+		max-width: 400px !important;
+	}
+	
+	#LONGBOX {
+		max-width: 423px !important;
+	}
+	
+	.longaboutbox {
+		width: 100% !important;
+	}
+	
+	.image-outside-top-right {
+		/* bodyguard */
+		right: -10px !important;
+		width: 200px;
+		top: -15px;
+	}
+	
+	.image-outside-top-right-2 {
+		/* shameful */
+		left: -50px;
+		z-index: 1;
+		top: -123px;
+		width: 450px;
+	}
+
+	.image-outside-top-right-4 {
+		/* cop */
+		right: -100% !important;
+		left: 77% !important;
+		z-index: 1;
+		top: -3%;
+		width: 24% !important;
+	}
+
+	.image-outside-top-right-3 {
+		/* enemies */
+		z-index: 4;
+		right: -16px !important;
+		width: 34% !important;
+		top: -5% !important;
+	}
+		
+		.aboutbox h2,
+	.longaboutbox h2 {
+		z-index: 3;
+		padding-top: 2rem;
+		color: black;
+		font-family: Posten;
+		font-size: 1.3rem;
+	}
+
 }
 
 footer {
@@ -700,7 +788,7 @@ footer {
 }
 
 footer .nav-link {
-    color: #000000;
+    color: white;
 }
 
 footer .nav-link:hover {
@@ -712,7 +800,7 @@ footer p {
     margin-right: 10%;
     margin-bottom: 0;
     padding-top: 1rem;
-    color: black;
+    color: white;
     text-align: center;
 }
 
