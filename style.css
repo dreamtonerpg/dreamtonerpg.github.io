@@ -16,6 +16,10 @@ body {
     );
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h1 {
     color: blue;
 }
@@ -133,17 +137,16 @@ h1 {
 }
 
 @media (max-width: 1094px) {
-	.image-outside-top-right-4 {
-		/* cop */
-		right: -100% !important;
-		left: 76% !important;
-	}
-	
-	.image-outside-top-right-2 {
-		/* shameful */
-		left: -60px !important;
-	}
+    .image-outside-top-right-4 {
+        /* cop */
+        right: -100% !important;
+        left: 76% !important;
+    }
 
+    .image-outside-top-right-2 {
+        /* shameful */
+        left: -60px !important;
+    }
 }
 
 @media (max-width: 1180px) {
@@ -184,9 +187,6 @@ h1 {
         padding-block-end: 40px;
         margin-block-end: 220px;
     }
-	
-	
-	
 }
 
 @media (max-width: 1284px) {
@@ -195,14 +195,14 @@ h1 {
     .infobox img {
         margin-top: 0rem !important;
     }
-	
-	.image-outside-top-right-3 {
-    /* enemies */
-    z-index: 4;
-    right: -60px !important;
-    width: 30% !important;
-    top: -0% !important;
-	}
+
+    .image-outside-top-right-3 {
+        /* enemies */
+        z-index: 4;
+        right: -60px !important;
+        width: 30% !important;
+        top: -0% !important;
+    }
 }
 
 .HomeLogoColumn {
@@ -371,7 +371,6 @@ h1 {
     margin-right: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 
     max-width: 70rem;
     justify-content: center;
@@ -397,7 +396,7 @@ h1 {
     background-color: #eaad61;
     flex-grow: 1;
     position: relative;
-    margin: 10px;
+    margin-bottom: 10px;
 
     box-sizing: border-box;
 
@@ -414,7 +413,7 @@ h1 {
     flex: 1;
     background-color: #eaad61;
     position: relative;
-    margin: 10px;
+    margin-bottom: 10px;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
 
@@ -500,7 +499,7 @@ h1 {
 
 .image-outside-top-right-4 {
     /* cop */
-	right: -6% !important;
+    right: -6% !important;
     z-index: 1;
     top: -9%;
     width: 25%;
@@ -681,15 +680,13 @@ h1 {
 }
 
 @media (max-width: 800px) {
-	
-	
     .neil {
         margin: none;
         width: min(400px);
         position: absolute;
         right: unset;
         top: -210px;
-		max-width: 350px;
+        max-width: 350px;
     }
 
     .neilContainer {
@@ -711,72 +708,73 @@ h1 {
         justify-items: end;
         flex-direction: column;
     }
-	
 
-	
-	.aboutColumn {
-		max-width: 300px !important;
-	}
-	
-	.flipper {
-		padding: 5px;
-		display: flex;
-		width: 134px;
-		height: 159px;
-		outline-style: solid;
-		outline-color: black;
-		outline-width: 0.2rem;
-		position: relative;
-		transform-style: preserve-3d;
-		transition: 0.6s;
-	}
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+    }
 
-	
-	.longaboutbox {
-		width: 100% !important;
-	}
-	
-	.image-outside-top-right {
-		/* bodyguard */
-		right: -10px !important;
-		width: 200px;
-		top: -15px;
-	}
-	
-	.image-outside-top-right-2 {
-		/* shameful */
-		left: -100px !important;
-		z-index: 1;
-		top: -123px;
-		width: 400px;
-	}
+    .aboutColumn {
+        max-width: 400px !important;
+    }
 
-	.image-outside-top-right-4 {
-		/* cop */
-		right: -100% !important;
-		left: 77% !important;
-		z-index: 1;
-		top: -3%;
-		width: 24% !important;
-	}
+    .flipper {
+        padding: 5px;
+        display: flex;
+        width: 134px;
+        height: 159px;
+        outline-style: solid;
+        outline-color: black;
+        outline-width: 0.2rem;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: 0.6s;
+    }
 
-	.image-outside-top-right-3 {
-		/* enemies */
-		z-index: 4;
-		right: -16px !important;
-		width: 34% !important;
-		top: -5% !important;
-	}
-		
-		.aboutbox h2,
-	.longaboutbox h2 {
-		z-index: 3;
-		padding-top: 2rem;
-		color: black;
-		font-family: Posten;
-		font-size: 1.3rem;
-	}
+    .longaboutbox {
+        width: 100% !important;
+    }
 
+    .image-outside-top-right {
+        /* bodyguard */
+        right: -10px !important;
+        width: 200px;
+        top: -15px;
+    }
+
+    .image-outside-top-right-2 {
+        /* shameful */
+        left: -40px !important;
+        z-index: 1;
+        top: -110px;
+        width: 400px;
+    }
+
+    .image-outside-top-right-4 {
+        /* cop */
+        right: -100% !important;
+        left: 77% !important;
+        z-index: 1;
+        top: -3%;
+        width: 24% !important;
+    }
+
+    .image-outside-top-right-3 {
+        /* enemies */
+        z-index: 4;
+        right: -16px !important;
+        width: 34% !important;
+        top: -5% !important;
+    }
+
+    .aboutbox h2,
+    .longaboutbox h2 {
+        z-index: 3;
+        padding-top: 2rem;
+        color: black;
+        font-family: Posten;
+        font-size: 1.3rem;
+    }
 }
 
 footer {
