@@ -284,7 +284,7 @@ h1 {
 }
 
 .screenshot {
-    image-rendering: pixelated;
+    /* image-rendering: pixelated; */
 
     width: 250px;
     flex-grow: 0;
@@ -492,7 +492,7 @@ h1 {
 
 .image-outside-top-right-2 {
     /* shameful */
-    left: -10px;
+    left: -60px;
     z-index: 1;
     top: -136px;
     width: 500px;
