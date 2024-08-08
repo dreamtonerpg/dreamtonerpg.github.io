@@ -537,6 +537,11 @@ h1 {
     font-size: 1.4rem;
 }
 
+#contact .content p {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
 
 #box1 .content p {
     padding-bottom: 0rem;
