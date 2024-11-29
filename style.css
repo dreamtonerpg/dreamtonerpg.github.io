@@ -813,6 +813,7 @@ footer .nav-link {
 
 footer .nav-link:hover {
     color: #06b896;
+	filter: invert(49%) sepia(96%) saturate(1157%) hue-rotate(130deg) brightness(92%) contrast(95%);
 }
 
 footer p {
