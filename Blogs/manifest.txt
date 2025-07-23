@@ -1,11 +1,5 @@
 [
     {
-        "TITLE": "dsddsadsbhd",
-        "DATE": "19/19/20",
-        "INTERNAL": "2",
-        "ID": 3
-    },
-    {
         "TITLE": "sjsjss",
         "DATE": "12/25/25",
         "INTERNAL": "1",
