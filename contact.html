@@ -1,188 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>DREAMTONE</title>
-	  
-	  <meta content="DREAMTONE - Contact" property="og:title" />
-		<meta content="A traditional RPG, set in a whimsical pastiche of the American 1980s!" property="og:description" />
-		<meta content="https://dreamtonegame.com" property="og:url" />
-		
-		<meta content="#005583" data-react-helmet="true" name="theme-color" />
-		<meta content="summary_large_image" name="twitter:card">
-		<meta name="og:image" itemprop="image" content="https://dreamtonegame.com/Resources/Assets/socialBanner.png">
-	  
-      <link rel="preload" href="./Resources/Assets/background.png" as="image">
-      <link rel="icon" href="./favicon.ico" type="image/x-icon">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-      <link rel="stylesheet" href="./style.css">
-      <script type="text/javascript" src="https://livejs.com/live.js"></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <style>
-         body {
-         background-image: url("./Resources/Assets/background.png");
-         background-size: 150% 100%;
-         }
-      </style>
-      <script>
-         const texts = [
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DREAMTONE</title>
+
+    <meta content="DREAMTONE - Contact" property="og:title" />
+    <meta content="A traditional RPG, set in a whimsical pastiche of the American 1980s!" property="og:description" />
+    <meta content="https://dreamtonegame.com" property="og:url" />
+
+    <meta content="#005583" data-react-helmet="true" name="theme-color" />
+    <meta content="summary_large_image" name="twitter:card">
+    <meta name="og:image" itemprop="image" content="https://dreamtonegame.com/Resources/Assets/socialBanner.png">
+
+    <link rel="preload" href="./Resources/Assets/background.png" as="image">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-image: url("./Resources/Assets/background.png");
+            background-size: 150% 100%;
+        }
+    </style>
+    <script>
+        const texts = [
             "<b>Give it more than your best!<b>",
-         "<b>Sometimes, the best answer is no answer!<b>",
-         "<b>Look both ways before crossing your mom!<b>",
-         "<b>Don't stay up too late, you'll get <a href='https://twitter.com/HYPERSOMNIAGame'>Hypersomnia</a><b>",
-         "<b>Have you heard Rockstop's new album?<b>",
-         "<b>In the middle of Knowhere.<b>",
-         "<b>Somewhere in the distance...<b>",
-         "<b>Don't forget to turn your feelings on!<b>",
-         "<b>Parallel park into the future!<b>",
-         "<b>Ottawa!<b>",
-         "<b>Go the distance!<b>",
-         "<b>All good devils hide in plain sight.",
-         "<b>Ideas for only a penny a pop!",
-         "<b>Eden is a shopping mall in Michigan.",
-         "<b>Sisyphus ain't got nothing on us!",
-         "<b>Beware the tales of the old world!"
-         ];
+            "<b>Sometimes, the best answer is no answer!<b>",
+            "<b>Look both ways before crossing your mom!<b>",
+            "<b>Don't stay up too late, you'll get <a href='https://twitter.com/HYPERSOMNIAGame'>Hypersomnia</a><b>",
+            "<b>Have you heard Rockstop's new album?<b>",
+            "<b>In the middle of Knowhere.<b>",
+            "<b>Somewhere in the distance...<b>",
+            "<b>Don't forget to turn your feelings on!<b>",
+            "<b>Parallel park into the future!<b>",
+            "<b>Ottawa!<b>",
+            "<b>Go the distance!<b>",
+            "<b>All good devils hide in plain sight.",
+            "<b>Ideas for only a penny a pop!",
+            "<b>Eden is a shopping mall in Michigan.",
+            "<b>Sisyphus ain't got nothing on us!",
+            "<b>Beware the tales of the old world!"
+        ];
 
-         function pickRandomText() {
-         	const randomIndex = Math.floor(Math.random() * texts.length);
-         	const randomText = texts[randomIndex];
-         	document.getElementById("replaceableText").innerHTML = randomText;
-         }
+        function pickRandomText() {
+            const randomIndex = Math.floor(Math.random() * texts.length);
+            const randomText = texts[randomIndex];
+            document.getElementById("replaceableText").innerHTML = randomText;
+        }
 
-         window.onload = pickRandomText;
+        window.onload = pickRandomText;
 
 
 
-          $(document).ready(function () {
-              var stickyNavbar = $('#stickyNavbar');
-              var stickyOffset = 440
+        $(document).ready(function () {
+            var stickyNavbar = $('#stickyNavbar');
+            var stickyOffset = 440
 
-             $(window).scroll(function () {
+            $(window).scroll(function () {
                 if ($(window).scrollTop() > stickyOffset) {
-                  stickyNavbar.addClass('visible');
+                    stickyNavbar.addClass('visible');
                 } else {
-                  stickyNavbar.removeClass('visible');
+                    stickyNavbar.removeClass('visible');
                 }
 
-              });
             });
-      </script>
-   </head>
-   <body>
-      <div class="body2">
-         <main>
+        });
+    </script>
+</head>
+
+<body>
+    <div class="body2">
+        <main>
             <nav class="navbar navbar-dark navbar-expand-md shadow">
-               <div class="container-md">
-                  <button class="navbar-toggler active" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                     <ul class="navbar-nav ms-auto fs-5">
-                        <li class="nav-item">
-                           <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                        </li>
-                        <span class="d-none d-md-block navbar-text text-white">
-                        <i class="bi bi-dot"></i>
-                        </span>
-                        <li class="nav-item">
-                           <a class="nav-link" href="./about.html">About</a>
-                        </li>
-                        <span class="d-none d-md-block navbar-text text-white" >
-                        <i class="bi bi-dot"></i>
-                        </span>
-                         <li class="nav-item">
-                           <a class="nav-link" href="./faq.html">FAQ</a>
-                        </li>
-						<span class="d-none d-md-block navbar-text text-white">
-                        <i class="bi bi-dot"></i>
-                        </span>
-                        <li class="nav-item">
-                           <a class="nav-link active" href="#">Contact</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
+                <div class="container-md">
+                    <button class="navbar-toggler active" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav ms-auto fs-5">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <span class="d-none d-md-block navbar-text text-white">
+                                <i class="bi bi-dot"></i>
+                            </span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About</a>
+                            </li>
+                            <span class="d-none d-md-block navbar-text text-white">
+                                <i class="bi bi-dot"></i>
+                            </span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./faq.html">FAQ</a>
+                            </li>
+                            <span class="d-none d-md-block navbar-text text-white">
+                                <i class="bi bi-dot"></i>
+                            </span>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <nav class="navbarSticky navbar-dark navbar-expand-md shadow" id="stickyNavbar">
-               <div class="container-md">
-                  <button class="navbar-toggler active" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                     <a class="navbar-brand" href="#"><img src="./Resources/Assets/logo.png"></img></a>
-                     <ul class="navbar-nav ms-auto fs-5">
-                        <li class="nav-item">
-                           <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                        </li>
-                        <span class="d-none d-md-block navbar-text text-white">
-                        <i class="bi bi-dot"></i>
-                        </span>
-                        <li class="nav-item">
-                           <a class="nav-link" href="./about.html">About</a>
-                        </li>
-                        <span class="d-none d-md-block navbar-text text-white" >
-                        <i class="bi bi-dot"></i>
-                        </span>
-                        <li class="nav-item">
-                           <a class="nav-link" href="./faq.html">FAQ</a>
-                        </li>
-						<span class="d-none d-md-block navbar-text text-white">
-                        <i class="bi bi-dot"></i>
-                        </span>
-                        <li class="nav-item">
-                           <a class="nav-link active" href="#">Contact</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
+                <div class="container-md">
+                    <button class="navbar-toggler active" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <a class="navbar-brand" href="#"><img src="./Resources/Assets/logo.png"></img></a>
+                        <ul class="navbar-nav ms-auto fs-5">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <span class="d-none d-md-block navbar-text text-white">
+                                <i class="bi bi-dot"></i>
+                            </span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About</a>
+                            </li>
+                            <span class="d-none d-md-block navbar-text text-white">
+                                <i class="bi bi-dot"></i>
+                            </span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./faq.html">FAQ</a>
+                            </li>
+                            <span class="d-none d-md-block navbar-text text-white">
+                                <i class="bi bi-dot"></i>
+                            </span>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
+
             <div class="aboutContainer">
-               <div class="aboutColumn">
-                  <div class="row">
-					<div class="longaboutbox" id="contact">
-						<center><h2>Contact us!</h2></center>
-						<div class="content">
-							<p style="padding-top: 2rem;">If you wanna send us a small message,<br> then shoot us a DM on <b><a href='https://twitter.com/DREAMTONEGame'>Twitter</a></b>, or on <b><a href='https://bsky.app/profile/dreamtonegame.com'>Bluesky</a></b>, or on join our <b><a href='https://discord.gg/f56t7p6VY7'>Discord!</a></b></p>
-							
-							<p>However, if you wanna send us something lengthy, discuss an interview, or talk business, <br>feel free to email us at <b><a href='mailto:dev@dreamtonegame.com'>dev@dreamtonegame.com</a></b></p>
+                <div class="aboutColumn">
+                    <div class="row">
+                        <div class="longaboutbox" id="contact">
+                            <center>
+                                <h2>Contact us!</h2>
+                            </center>
+                            <div class="content">
+                                <p style="padding-top: 2rem;">If you wanna send us a small message,<br> then shoot us a
+                                    DM on <b><a href='https://twitter.com/DREAMTONEGame'>Twitter</a></b>, or on <b><a
+                                            href='https://bsky.app/profile/dreamtonegame.com'>Bluesky</a></b>, or on
+                                    join our <b><a href='https://discord.gg/f56t7p6VY7'>Discord!</a></b></p>
+
+                                <p>However, if you wanna send us something lengthy, discuss an interview, or talk
+                                    business, <br>feel free to email us at <b><a
+                                            href='mailto:dev@dreamtonegame.com'>dev@dreamtonegame.com</a></b></p>
+                            </div>
                         </div>
-					</div>
-				  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-			
-      </div>
-      </main>
-      <footer id="footer">
-         <div class="neilContainer">
+
+    </div>
+    </main>
+    <footer id="footer">
+        <div class="neilContainer">
             <img src="./Resources/Assets/About/approved.png" class="neil">
             <div class="footerText">
-               <p id="replaceableText"></p>
-               <center>
-                  <p style="padding-bottom: 0;"><b>Social Media</p>
-               </center>
-               <div class="d-flex justify-content-center" style="overflow: hidden">
-                  <div class="d-flex justify-content-center" style="padding-top: 0rem;">
-                  </div>
-                  <!-- <p class="d-inline-flex gap-4"> -->
-                  <!-- <a type="button" href="https://twitter.com/DREAMTONEgame" class="btn btn-primary bi bi-twitter"></a> -->
-                  <!-- <a type="button" href="https://www.youtube.com/channel/UCVATFoQAiR01cGVx1tTJIeA" class="btn btn-danger bi bi-youtube"></a> -->
-                  <!-- <a type="button" href="https://discord.gg/f56t7p6VY7" class="btn btn-secondary bi bi-discord"></a> -->
-                  <!-- </p> -->
-                  <h3><a title="Twitter" href="https://twitter.com/DREAMTONEgame" class="nav-link bi bi-twitter" aria-hidden="true"> </a><span class="sr-only"></span></h3>
-                  <h3><a title="Bluesky" href="https://bsky.app/profile/dreamtonegame.com" aria-hidden="true" class="nav-link"><img src="./Resources/Assets/bluesky-1.svg" style="width:1.8rem; margin-top:-0.5rem"></a><span class="sr-only"></span></h3>
-				  <h3><a title="Youtube" href="https://www.youtube.com/channel/UCVATFoQAiR01cGVx1tTJIeA" class="nav-link bi bi-youtube" aria-hidden="true"> </a><span class="sr-only"></span></h3>
-                  <h3><a title="Discord" href="https://discord.gg/f56t7p6VY7" class="nav-link bi bi-discord" aria-hidden="discord"> </a><span class="sr-only"></span></h3>
-               </div>
+                <p id="replaceableText"></p>
+                <center>
+                    <p style="padding-bottom: 0;"><b>Social Media</p>
+                </center>
+                <div class="d-flex justify-content-center" style="overflow: hidden">
+                    <div class="d-flex justify-content-center" style="padding-top: 0rem;">
+                    </div>
+                    <!-- <p class="d-inline-flex gap-4"> -->
+                    <!-- <a type="button" href="https://twitter.com/DREAMTONEgame" class="btn btn-primary bi bi-twitter"></a> -->
+                    <!-- <a type="button" href="https://www.youtube.com/channel/UCVATFoQAiR01cGVx1tTJIeA" class="btn btn-danger bi bi-youtube"></a> -->
+                    <!-- <a type="button" href="https://discord.gg/f56t7p6VY7" class="btn btn-secondary bi bi-discord"></a> -->
+                    <!-- </p> -->
+                    <h3><a title="Twitter" href="https://twitter.com/DREAMTONEgame" class="nav-link bi bi-twitter"
+                            aria-hidden="true"> </a><span class="sr-only"></span></h3>
+                    <h3><a title="Bluesky" href="https://bsky.app/profile/dreamtonegame.com" aria-hidden="true"
+                            class="nav-link"><img src="./Resources/Assets/bluesky-1.svg"
+                                style="width:1.8rem; margin-top:-0.5rem"></a><span class="sr-only"></span></h3>
+                    <h3><a title="Youtube" href="https://www.youtube.com/channel/UCVATFoQAiR01cGVx1tTJIeA"
+                            class="nav-link bi bi-youtube" aria-hidden="true"> </a><span class="sr-only"></span></h3>
+                    <h3><a title="Discord" href="https://discord.gg/f56t7p6VY7" class="nav-link bi bi-discord"
+                            aria-hidden="discord"> </a><span class="sr-only"></span></h3>
+                </div>
             </div>
-      </footer>
-      </div>
-   </body>
-   </div>
+    </footer>
+    </div>
+</body>
+</div>
+
 </html>

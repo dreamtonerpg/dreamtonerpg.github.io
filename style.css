@@ -1,6 +1,8 @@
 @font-face {
-    font-family: "Posten"; /*a name to be used later*/
-    src: url("./Resources/Fonts/PoetsenOne-Regular.otf"); /*URL to font*/
+    font-family: "Posten";
+    /*a name to be used later*/
+    src: url("./Resources/Fonts/PoetsenOne-Regular.otf");
+    /*URL to font*/
 }
 
 body {
@@ -8,12 +10,21 @@ body {
     /* background-image: url("./Resources/Assets/vriska.png"); */
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
 .body2 {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 193, 150, 0.5),
-        rgba(06, 193, 150, 1)
-    );
+    background-image: linear-gradient(to bottom,
+            rgba(0, 193, 150, 0.5),
+            rgba(06, 193, 150, 1));
 }
 
 * {
@@ -49,11 +60,24 @@ h1 {
 }
 
 .infobox .about {
-    background-color: white;
+    background-color: #fcfaf8;
     border-radius: 25px;
     padding-bottom: 1rem;
     margin-inline-start: 320px;
     margin-top: 1rem;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
+    flex: 1;
+    width: 100%;
+}
+
+.info_about {
+    background-color: #fcfaf8;
+    border-radius: 25px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 4rem;
     outline-style: solid;
     outline-color: black;
     outline-width: 0.2rem;
@@ -80,23 +104,61 @@ h1 {
     padding-left: 2rem;
 }
 
-.galleryBox {
+.information_boxes {
+    width: 77%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-left: 0rem;
+    margin-top: -2rem;
+    margin-top: -2rem;
+}
+
+.home_info_Box {
     position: relative;
     margin-top: 3rem;
     margin-bottom: 3rem;
     background-color: #eaad61;
-    display: flex;
-    flex-direction: row;
-    /* padding-right: -1rem; */
+
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
-    width: 77%;
-    gap: 50px;
+    width: 50%;
+    height: 35.7rem;
+
     outline-style: solid;
     outline-color: black;
     outline-width: 0.2rem;
 }
+
+.blogSection {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 29.2rem;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+.galleryBox {
+    position: relative;
+    margin-top: -3rem;
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+    height: 33.2rem;
+}
+
 
 .HomeBar {
     display: flex;
@@ -134,6 +196,20 @@ h1 {
     .navbarSticky img {
         display: none;
     }
+
+    .information_boxes {
+        width: unset;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0rem;
+        margin-left: unset;
+        margin-top: unset;
+        padding-inline: 1rem;
+    }
+
+    .home_info_Box {
+        width: unset;
+    }
 }
 
 @media (max-width: 1094px) {
@@ -150,6 +226,7 @@ h1 {
 }
 
 @media (max-width: 1180px) {
+
     /*vertical layout*/
     .HomeBar {
         flex-direction: column;
@@ -215,7 +292,7 @@ h1 {
 }
 
 .HomeLogoColumn p {
-    color: white;
+    color: #fcfaf8;
     font-family: Posten;
 
     font-size: 1.6rem;
@@ -228,7 +305,7 @@ h1 {
         0 0.2rem 0 #005583,
         -0.2rem 0.2rem 0 #005583,
         -0.2rem 0 0 #005583;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px #fcfaf8;
 
     /* outline-style: solid;  */
     /* outline-color: #005583;  */
@@ -281,6 +358,9 @@ h1 {
     max-width: 60rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    height: 29.2rem;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .screenshot {
@@ -344,6 +424,7 @@ h1 {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 0;
         transform: translateY(0.6rem);
@@ -355,6 +436,7 @@ h1 {
         opacity: 0;
         transform: translateY(0.6rem);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -429,6 +511,9 @@ h1 {
     outline-width: 0.2rem;
 }
 
+
+
+.home_info_Box h2,
 .aboutbox h2,
 .longaboutbox h2 {
     z-index: 3;
@@ -438,12 +523,17 @@ h1 {
     font-size: 1.8rem;
 }
 
+.home_info_Box h2 {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
+
 .content {
     position: relative;
 
     z-index: 2;
 
-    background-color: white;
+    background-color: #fcfaf8;
     border-radius: 25px;
     padding-bottom: 1rem;
 
@@ -491,7 +581,7 @@ h1 {
     transform: translateY(calc(-100% + 100px));
 }
 
-.image-outside-top-right + h2 {
+.image-outside-top-right+h2 {
     font-style: 0.75em;
 }
 
@@ -573,6 +663,7 @@ h1 {
     float: left;
     width: 300px;
 }
+
 #box2 .container img {
     padding-top: 1.8rem;
     padding-left: 1rem;
@@ -624,7 +715,8 @@ h1 {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
 }
 
 .front img {
@@ -634,7 +726,7 @@ h1 {
 }
 
 .back {
-    color: white;
+    color: #fcfaf8;
     display: flex;
     justify-content: center;
     transform: rotateY(180deg);
@@ -654,7 +746,7 @@ h1 {
 .back h1 {
     padding-top: 0.5rem;
     padding-left: 1rem;
-    color: white;
+    color: #fcfaf8;
     font-size: 2rem;
     font-family: Posten;
     text-shadow: black 1px 0 10px;
@@ -791,6 +883,10 @@ h1 {
         font-family: Posten;
         font-size: 1.3rem;
     }
+
+    .blog.loaded {
+        width: unset;
+    }
 }
 
 footer {
@@ -808,12 +904,12 @@ footer {
 }
 
 footer .nav-link {
-    color: white;
+    color: #fcfaf8;
 }
 
 footer .nav-link:hover {
     color: #06b896;
-	filter: invert(49%) sepia(96%) saturate(1157%) hue-rotate(130deg) brightness(92%) contrast(95%);
+    filter: invert(49%) sepia(96%) saturate(1157%) hue-rotate(130deg) brightness(92%) contrast(95%);
 }
 
 footer p {
@@ -821,7 +917,7 @@ footer p {
     margin-right: 10%;
     margin-bottom: 0;
     padding-top: 0rem;
-    color: white;
+    color: #fcfaf8;
     text-align: center;
 }
 
@@ -864,4 +960,158 @@ footer p {
 
 a {
     color: #06bf96;
+}
+
+
+
+
+.blogItem {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 4px solid #de6e4b;
+    padding-bottom: 0.5rem;
+
+}
+
+.blogMeta {
+    color: #de6e4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+    font-weight: bold;
+    margin-top: -0.4rem;
+}
+
+.blogNumber {
+    font-size: 2.5rem;
+    font-family: Posten;
+}
+
+.blogDate {
+    color: #de6e4b;
+    font-size: 1rem;
+    margin-top: -0.3rem;
+    /* font-family: Posten; */
+}
+
+.blogContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.blogTitle {
+    font-size: 2rem;
+    color: #de6e4b;
+    font-weight: bold;
+    font-family: Posten;
+}
+
+.blogTitle a {
+    text-decoration: none;
+    color: #de6e4b;
+}
+
+.blogText {
+    font-size: 1rem;
+
+}
+
+.main_blogText {
+    font-size: 1.2rem;
+
+}
+
+.main_blogText img{
+    width: 80%;
+}
+
+.main_blogText figcaption{
+    width: 80%;
+    color: #bbb;
+}
+
+.figure-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.figure-container > * {
+    flex: 0 1 calc(25% - 0.75rem);
+}
+
+.big-figure-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.big-figure-container > * {
+    flex: 0 1 calc(50% - 0.75rem);
+}
+
+.figure-container figure {
+    margin: 0;
+}
+
+.figure-container img {
+    width: 100%;
+    height: auto;
+}
+
+.blog.loaded {
+    visibility: visible;
+    transition: visibility 0s linear 0s;
+    animation:
+        nothing,
+        fadeInAnimation 0.5s;
+    animation-delay: 0s, 0s;
+}
+
+.blog {
+    visibility: hidden;
+    /* animation:
+        nothing,
+        fadeInAnimation 0.5s;
+    animation-delay: 0s, 0s; */
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #fcfaf8;
+
+
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.2rem;
+}
+
+.blog-image {
+    width: 100%;
+    
+    border: 0.2rem solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background-position: center;
+    background-image: url("./Resources/Assets/Blog/header_background.png");
+}
+
+.blog-image img {
+    max-height: 100%;
+    width: 100%;
+    align-self: flex-end;
+    object-fit: contain;
 }
