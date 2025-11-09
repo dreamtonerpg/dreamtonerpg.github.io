@@ -1,5 +1,11 @@
 [
     {
+        "TITLE": "DREAMTONE Vol. 1 is Now Coming March 11, 2025",
+        "DATE": "11/09/25",
+        "INTERNAL": "1",
+        "ID": 2
+    },
+    {
         "TITLE": "DREAMTONE Progress report #1",
         "DATE": "07/28/25",
         "INTERNAL": "0",
