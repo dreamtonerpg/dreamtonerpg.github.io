@@ -1115,3 +1115,7 @@ a {
     align-self: flex-end;
     object-fit: contain;
 }
+
+.btn-warning {
+  background-color: #eaad61;
+}
